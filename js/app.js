@@ -18,32 +18,16 @@ function multiply(a, b) { //eslint-disable-line
 
 testMultiply(5,9);
 
-// Problem 3
-// Write a function called sumAndMultiply() that takes in three numbers as separate arguments and 
-// returns an array where the first element is the sum of those three numbers, 
-// the second element is the product of those three numbers,  
-// and the third and fourth elements are strings that EXACTLY follow this example 
-// and use the values that were input into the function:
-
-// Third element: "4 and 7 and 5 sum to 16."
-// Fourth element: "The product of 4 and 7 and 5 is 140."
 
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 
   let sumNumber =   sum(sum(a,b)[0],c)[0];
-  console.log('sum', sumNumber);
   let productNumber = multiply(multiply(a,b)[0],c)[0];
-  console.log(productNumber);
   let message1 = `${a} and ${b} and ${c} sum to ${sumNumber}.`;
-  console.log(message1);
   let message2 = `The product of ${a} and ${b} and ${c} is ${productNumber}.`;
-  console.log(message2);
-
-
   return [sumNumber, productNumber, message1, message2];
 }
 
-// Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
