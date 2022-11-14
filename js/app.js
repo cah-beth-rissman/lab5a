@@ -19,6 +19,7 @@ function multiply(a, b) { //eslint-disable-line
 testMultiply(5,9);
 
 
+
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 
   let sumNumber =   sum(sum(a,b)[0],c)[0];
@@ -31,20 +32,14 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 testSumAndMultiply(4,7,5);
 
 
-let testArray = [2, 3, 4]; //eslint-disable-line
-
-function sumArray(sumArr) { //eslint-disable-line
-  let sumArraySum = sum(sumArr[0],sum(sumArr[1],sumArr[2])[0]);
-  let message = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sumArraySum[0]} is their sum.`;
-  return [sumArraySum[0], message];
-}
-
 sumArray(testArray);
+
 
 testSumArray(testArray);
 
 
 function multiplyArray(multArr) { //eslint-disable-line
+
   let multiplyArrayProduct = multiply(multiply(multArr[0],multArr[1])[0],multArr[2])[0];
   let message = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${multiplyArrayProduct}.`;
   return [multiplyArrayProduct,message];
