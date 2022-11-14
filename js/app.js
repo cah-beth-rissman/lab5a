@@ -30,7 +30,6 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 
 testSumAndMultiply(4,7,5);
 
-
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
@@ -40,6 +39,7 @@ function sumArray(sumArr) { //eslint-disable-line
 }
 
 sumArray(testArray);
+
 
 testSumArray(testArray);
 
