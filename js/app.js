@@ -30,13 +30,6 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 
 testSumAndMultiply(4,7,5);
 
-let testArray = [2, 3, 4]; //eslint-disable-line
-
-function sumArray(sumArr) { //eslint-disable-line
-  let sumArraySum = sum(sumArr[0],sum(sumArr[1],sumArr[2])[0]);
-  let message = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sumArraySum[0]} is their sum.`;
-  return [sumArraySum[0], message];
-}
 
 sumArray(testArray);
 
