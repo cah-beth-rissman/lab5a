@@ -53,3 +53,4 @@ function multiplyArray(multArr) { //eslint-disable-line
 multiplyArray(testArray);
 
 testMultiplyArray(testArray);
+// adding comment
